@@ -63,6 +63,23 @@ body {
     font-size: 1.6rem;
     color: var(--heading--white);
     margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+
+    &:before, &:after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background: var(--heading--white);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &:after {
+        top: auto;
+        bottom: 0;
+    }
 }
 
 .left--portrait {
@@ -87,6 +104,7 @@ body {
     p {
         font-size: 0.8rem;
         color: var(--text-white);
+        text-align: center;
 
         &:nth-child(2) {
             margin-bottom: 8px;
@@ -111,7 +129,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 20px;
+    row-gap: 8px;
 }
 
 .left--hobby {
@@ -123,11 +141,11 @@ body {
 
     img {
         height: auto;
-        width: 80%;
+        width: 70%;
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--heading--white);
         margin-bottom: 12px;
     }
@@ -148,6 +166,23 @@ body {
     font-size: 1.6rem;
     color: var(--heading--black);
     margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+
+    &:before, &:after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background: var(--heading--black);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &:after {
+        top: auto;
+        bottom: 0;
+    }
 }
 
 .right--header {
@@ -176,14 +211,16 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    position: relative;
+    top: 10px;
 
     img {
-        height: 20px;
+        height: 12px;
         width: auto;
     }
 
     a {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         color: var(--anchor-black);
     }
 }
